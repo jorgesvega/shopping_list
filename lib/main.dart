@@ -4,7 +4,6 @@ import 'package:redux/redux.dart';
 import 'package:shopping_list/model/CartItem.dart';
 import 'package:shopping_list/shopping_cart_app.dart';
 import 'package:shopping_list/redux/reducers.dart';
-// import 'package:redux_dev_tools/redux_dev_tools.dart'; // For time travel
 
 void main() {
   final store = new Store<List<CartItem>>(

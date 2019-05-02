@@ -12,7 +12,7 @@ List<CartItem> cartItemReducer(List<CartItem> items, dynamic action) {
 }
 
 List<CartItem> addItem(List<CartItem> items, AddItemAction action) {
-  return new List.from(items)..add(action.item); // Two dots: It returns the receiver instead of the result of the call.
+  return new List.from(items)..add(action.item); // Two dots: Cascade notation. This allow us to make some operations on this object (add items to the list), and return it.
 }
 
 List<CartItem> toggleItemState(List<CartItem> items, ToggleItemStateAction action) {
